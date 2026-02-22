@@ -1,0 +1,90 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    font-size: 1.4rem;
+}
+
+.card {
+    border-radius: 12px;
+}
+
+.btn-primary {
+    background-color: #4e73df;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #2e59d9;
+}
+
+.card img {
+    height: 300px;
+    object-fit: cover;
+}
+.hero-tienda {
+    height: 350px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url('/img/perro.jpg') center/cover no-repeat;
+    border-radius: 12px;
+    margin: 20px;
+}
+
+.producto img {
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.producto {
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+}
+
+.precio {
+    font-weight: bold;
+    color: #28a745;
+}
+
+.banner-categoria {
+    padding: 60px;
+    border-radius: 16px;
+    text-align: center;
+    color: white;
+}
+
+.perros {
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+}
+
+.gatos {
+    background: linear-gradient(45deg, #a18cd1, #fbc2eb);
+}
+
+.icono-grande {
+    font-size: 60px;
+}
+
+.producto-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.aves {
+    background: linear-gradient(45deg, #89f7fe, #66a6ff);
+}
+
+.peces {
+    background: linear-gradient(45deg, #43cea2, #185a9d);
+}
+
+.otras {
+    background: linear-gradient(45deg, #f6d365, #fda085);
+}

@@ -1,0 +1,62 @@
+<h2 class="text-center mb-4">Sacar Turno ✂️</h2>
+
+<form action="/turno" method="POST" class="row g-3">
+
+  <div class="col-md-6">
+    <label class="form-label">Nombre del dueño</label>
+    <input type="text" name="nombre_dueno" class="form-control" required>
+  </div>
+
+  <div class="col-md-6">
+    <label class="form-label">Nombre de la mascota</label>
+    <input type="text" name="nombre_mascota" class="form-control" required>
+  </div>
+
+  <div class="col-md-6">
+    <label class="form-label">Servicio</label>
+    <select name="servicio" class="form-select" required>
+      <option value="">Seleccionar...</option>
+      <option value="Baño">Baño</option>
+      <option value="Peluquería">Peluquería</option>
+      <option value="Baño y Peluquería">Baño y Peluquería</option>
+    </select>
+  </div>
+
+  <div class="col-md-6">
+    <label class="form-label">Fecha</label>
+    <input type="date" name="fecha" class="form-control" required>
+  </div>
+
+  <div class="col-md-6">
+    <label class="form-label">Horario</label>
+    <select name="horario" class="form-select" required>
+      <option value="">Seleccionar...</option>
+      <option>08:00</option>
+      <option>09:00</option>
+      <option>10:00</option>
+      <option>11:00</option>
+      <option>12:00</option>
+      <option>13:00</option>
+      <option>14:00</option>
+      <option>15:00</option>
+      <option>16:00</option>
+      <option>17:00</option>
+      <option>18:00</option>
+    </select>
+  </div>
+
+  <div class="col-md-6">
+    <label class="form-label">Email</label>
+    <input type="email" name="email" class="form-control" required>
+  </div>
+
+  <div class="col-md-6">
+    <label class="form-label">WhatsApp</label>
+    <input type="text" name="whatsapp" class="form-control" required>
+  </div>
+
+  <div class="col-12 text-center">
+    <button type="submit" class="btn btn-primary">Solicitar Turno</button>
+  </div>
+
+</form>

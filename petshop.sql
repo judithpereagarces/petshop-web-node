@@ -1,0 +1,73 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.1
+-- https://www.phpmyadmin.net/
+--
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 22-02-2026 a las 14:15:29
+-- Versión del servidor: 10.4.32-MariaDB
+-- Versión de PHP: 8.2.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Base de datos: `petshop`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `turnos`
+--
+
+CREATE TABLE `turnos` (
+  `id` int(11) NOT NULL,
+  `nombre_dueno` varchar(100) NOT NULL,
+  `nombre_mascota` varchar(100) NOT NULL,
+  `servicio` varchar(100) NOT NULL,
+  `fecha` date NOT NULL,
+  `horario` varchar(10) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `whatsapp` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `turnos`
+--
+
+INSERT INTO `turnos` (`id`, `nombre_dueno`, `nombre_mascota`, `servicio`, `fecha`, `horario`, `email`, `whatsapp`) VALUES
+(3, 'Judith', 'Brisa', 'Peluquería', '2026-02-18', '14:00', 'Judithpereagarces@gmail.com', '2920419678'),
+(4, 'Judith', 'Brisa', 'Baño y Peluquería', '2026-02-18', '12:00', 'Judithpereagarces@gmail.com', '2920419678'),
+(5, 'Judith', 'Brisa', 'Baño', '2026-02-20', '17:00', 'Judithpereagarces@gmail.com', '2920419678');
+
+--
+-- Índices para tablas volcadas
+--
+
+--
+-- Indices de la tabla `turnos`
+--
+ALTER TABLE `turnos`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `turnos`
+--
+ALTER TABLE `turnos`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

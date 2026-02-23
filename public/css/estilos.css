@@ -23,13 +23,6 @@ body {
     height: 300px;
     object-fit: cover;
 }
-.hero-tienda {
-    height: 350px;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-                url('/img/perro.jpg') center/cover no-repeat;
-    border-radius: 12px;
-    margin: 20px;
-}
 
 .producto img {
     height: 250px;
@@ -87,4 +80,12 @@ body {
 
 .otras {
     background: linear-gradient(45deg, #f6d365, #fda085);
+}
+
+.hero-tienda {
+    height: 350px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url('/img/perro-banner.jpg') center/cover no-repeat;
+    border-radius: 16px;
+    margin-bottom: 40px;
 }

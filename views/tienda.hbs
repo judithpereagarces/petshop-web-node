@@ -1,5 +1,14 @@
-<div class="container mt-5">
+<div class="container mt-4">
 
+    <!-- HERO PRINCIPAL -->
+    <div class="hero-tienda d-flex align-items-center justify-content-center text-white mb-5">
+        <div class="text-center">
+            <h1 class="fw-bold">Nuestra Tienda 🐾</h1>
+            <p class="lead">Productos seleccionados con amor</p>
+        </div>
+    </div>
+
+    <!-- BANNER SEGÚN CATEGORÍA -->
     {{#if categoria}}
 
         {{#if (eq categoria "perros")}}
@@ -14,102 +23,130 @@
             </div>
         {{/if}}
 
+        {{#if (eq categoria "aves")}}
+            <div class="banner-categoria aves">
+                <h2>Productos para Aves 🐦</h2>
+            </div>
+        {{/if}}
+
+        {{#if (eq categoria "peces")}}
+            <div class="banner-categoria peces">
+                <h2>Productos para Peces 🐠</h2>
+            </div>
+        {{/if}}
+
+        {{#if (eq categoria "otras")}}
+            <div class="banner-categoria otras">
+                <h2>Productos para Otras Especies 🦎</h2>
+            </div>
+        {{/if}}
+
     {{/if}}
 
-    {{#if (eq categoria "aves")}}
-    <div class="banner-categoria aves">
-        <h2>Alimentos y Accesorios para Aves 🐦</h2>
-    </div>
-{{/if}}
-
-{{#if (eq categoria "peces")}}
-    <div class="banner-categoria peces">
-        <h2>Alimentos y Accesorios para Peces 🐠</h2>
-    </div>
-{{/if}}
-
-{{#if (eq categoria "otras")}}
-    <div class="banner-categoria otras">
-        <h2>Alimentos y Accesorios para Otras Especies 🦎</h2>
-    </div>
-{{/if}}
+    <!-- PRODUCTOS -->
+    {{#if categoria}}
 
     <div class="row g-4 mt-4">
 
-{{#if (eq categoria "perros")}}
+        {{#if (eq categoria "perros")}}
+            <div class="col-md-4">
+                <div class="producto-card text-center p-4">
+                    <div class="icono-grande">🦴</div>
+                    <h5>Alimento Premium Perro</h5>
+                    <p class="precio">$5.200</p>
+                </div>
+            </div>
+        {{/if}}
 
-    <div class="col-md-4">
-        <div class="producto-card text-center p-4">
-            <div class="icono-grande">🦴</div>
-            <h5>Alimento Premium Perro</h5>
-            <p class="precio">$5.200</p>
-        </div>
+        {{#if (eq categoria "gatos")}}
+            <div class="col-md-4">
+                <div class="producto-card text-center p-4">
+                    <div class="icono-grande">🐟</div>
+                    <h5>Alimento Premium Gato</h5>
+                    <p class="precio">$4.800</p>
+                </div>
+            </div>
+        {{/if}}
+
+        {{#if (eq categoria "aves")}}
+            <div class="col-md-4">
+                <div class="producto-card text-center p-4">
+                    <div class="icono-grande">🌻</div>
+                    <h5>Semillas para Aves</h5>
+                    <p class="precio">$1.800</p>
+                </div>
+            </div>
+        {{/if}}
+
+        {{#if (eq categoria "peces")}}
+            <div class="col-md-4">
+                <div class="producto-card text-center p-4">
+                    <div class="icono-grande">🐠</div>
+                    <h5>Alimento para Peces</h5>
+                    <p class="precio">$2.200</p>
+                </div>
+            </div>
+        {{/if}}
+
+        {{#if (eq categoria "otras")}}
+            <div class="col-md-4">
+                <div class="producto-card text-center p-4">
+                    <div class="icono-grande">🦎</div>
+                    <h5>Terrario Especial</h5>
+                    <p class="precio">$12.500</p>
+                </div>
+            </div>
+        {{/if}}
+
     </div>
 
-    <div class="col-md-4">
-        <div class="producto-card text-center p-4">
-            <div class="icono-grande">🎾</div>
-            <h5>Juguete Interactivo</h5>
-            <p class="precio">$3.100</p>
+    {{else}}
+
+    <!-- MOSTRAR TODOS LOS PRODUCTOS SI NO HAY CATEGORÍA -->
+    <div class="row g-4 mt-4">
+
+        <div class="col-md-4">
+            <div class="producto-card text-center p-4">
+                <div class="icono-grande">🦴</div>
+                <h5>Alimento Premium Perro</h5>
+                <p class="precio">$5.200</p>
+            </div>
         </div>
+
+        <div class="col-md-4">
+            <div class="producto-card text-center p-4">
+                <div class="icono-grande">🐟</div>
+                <h5>Alimento Premium Gato</h5>
+                <p class="precio">$4.800</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="producto-card text-center p-4">
+                <div class="icono-grande">🌻</div>
+                <h5>Semillas para Aves</h5>
+                <p class="precio">$1.800</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="producto-card text-center p-4">
+                <div class="icono-grande">🐠</div>
+                <h5>Alimento para Peces</h5>
+                <p class="precio">$2.200</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="producto-card text-center p-4">
+                <div class="icono-grande">🦎</div>
+                <h5>Terrario Especial</h5>
+                <p class="precio">$12.500</p>
+            </div>
+        </div>
+
     </div>
 
-{{/if}}
-
-{{#if (eq categoria "gatos")}}
-
-    <div class="col-md-4">
-        <div class="producto-card text-center p-4">
-            <div class="icono-grande">🐟</div>
-            <h5>Alimento Premium Gato</h5>
-            <p class="precio">$4.800</p>
-        </div>
-    </div>
-
-    <div class="col-md-4">
-        <div class="producto-card text-center p-4">
-            <div class="icono-grande">🧶</div>
-            <h5>Juguete con Catnip</h5>
-            <p class="precio">$2.900</p>
-        </div>
-    </div>
-
-{{/if}}
-
-{{#if (eq categoria "aves")}}
-
-    <div class="col-md-4">
-        <div class="producto-card text-center p-4">
-            <div class="icono-grande">🌻</div>
-            <h5>Semillas Premium</h5>
-            <p class="precio">$1.800</p>
-        </div>
-    </div>
-
-{{/if}}
-
-{{#if (eq categoria "peces")}}
-
-    <div class="col-md-4">
-        <div class="producto-card text-center p-4">
-            <div class="icono-grande">🐠</div>
-            <h5>Alimento en Escamas</h5>
-            <p class="precio">$2.200</p>
-        </div>
-    </div>
-
-{{/if}}
-
-{{#if (eq categoria "otras")}}
-
-    <div class="col-md-4">
-        <div class="producto-card text-center p-4">
-            <div class="icono-grande">🦎</div>
-            <h5>Terrario Especial</h5>
-            <p class="precio">$12.500</p>
-        </div>
-    </div>
-
-{{/if}}
+    {{/if}}
 
 </div>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 22-02-2026 a las 14:15:29
+-- Tiempo de generación: 27-02-2026 a las 18:39:58
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -43,9 +43,8 @@ CREATE TABLE `turnos` (
 --
 
 INSERT INTO `turnos` (`id`, `nombre_dueno`, `nombre_mascota`, `servicio`, `fecha`, `horario`, `email`, `whatsapp`) VALUES
-(3, 'Judith', 'Brisa', 'Peluquería', '2026-02-18', '14:00', 'Judithpereagarces@gmail.com', '2920419678'),
-(4, 'Judith', 'Brisa', 'Baño y Peluquería', '2026-02-18', '12:00', 'Judithpereagarces@gmail.com', '2920419678'),
-(5, 'Judith', 'Brisa', 'Baño', '2026-02-20', '17:00', 'Judithpereagarces@gmail.com', '2920419678');
+(9, 'Judith', 'Brisa', 'Baño y Peluquería', '2026-03-24', '14:00', 'Judithpereagarces@gmail.com', '2920419678'),
+(10, 'Silvia', 'nora', 'Peluquería', '2026-02-27', '16:00', 'Judithpereagarces@gmail.com', '2920414630');
 
 --
 -- Índices para tablas volcadas
@@ -65,7 +64,7 @@ ALTER TABLE `turnos`
 -- AUTO_INCREMENT de la tabla `turnos`
 --
 ALTER TABLE `turnos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

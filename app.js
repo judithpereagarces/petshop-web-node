@@ -44,12 +44,4 @@ app.use(express.static(path.join(__dirname, 'public')));
 const indexRoutes = require('./routes/index');
 app.use('/', indexRoutes);
 
-// ==========================
-// SERVIDOR
-// ==========================
-
-const PORT = 3000;
-
-app.listen(PORT, () => {
-    console.log(`Servidor corriendo en http://localhost:${PORT}`);
-});
+module.exports = app;
